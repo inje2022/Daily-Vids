@@ -16,21 +16,67 @@ html, body {
                     filter: FlipH;
                 }
 #camera--trigger{
-            width: 180px;
-            color: white;
-            background-color: yellow;
+            width: 77px;
+            height: 77px;
+            background: radial-gradient(50% 50% at 50% 50%, #FFAA7A 0%, rgba(255, 194, 163, 0.8) 67.71%, rgba(255, 224, 214, 0) 99.99%, #E88D71 100%, #EFBC9F 100%);
             font-size: 16px;
-            border-radius: 30px;
+            border-radius: 100%;
             border: none;
-            padding: 15px 20px;
-            text-align: center;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0, 0.2);
             position: fixed;
-            bottom: 30px;
-            left: calc(50% - 90px);
-                        }
+            top: 696px;
+            left: 152px;
+      }
+
+#camera--trigger_borderline {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  left: 152px;
+  top: 696px;
+  border: 3px solid rgb(255, 255, 255);
+}
+
 
 .taken {
             height: 140px!important;
             width: 220px!important;
             border: solid 2px rgb(121, 200, 253);
+}
+
+.myrecord {
+  position: fixed;
+  width: 48px; height: 48px;
+  background-color: #c4c4c4;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  top: 716px; left: 47px;
+}
+
+#mention {
+  position: fixed;
+  top: 47px; left: 28px;
+}
+
+#hashtag {
+  position: fixed;
+  top: 47px; left: 87px;
+}
+
+#feed {
+  position: fixed;
+  top: 47px; left: 311px;
+}
+
+#to-selfie {
+  position: fixed;
+  top: 709px; left: 290px;
+}
