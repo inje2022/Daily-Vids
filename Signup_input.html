@@ -62,26 +62,54 @@
         box-shadow: 0 0 0 0.2rem rgba(255, 170, 122, 0.25);
         padding: 18px;
       }
+      @keyframes fadein {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .first_interaction {
+      animation: fadein ease 1s;
+      animation-iteration-count: 1s;
+      animation-fill-mode: forwards;
+    }
+    .second_interaction {
+      opacity: 0;
+      animation: fadein ease 1s;
+      animation-iteration-count: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.8s;
+    }
     </style>
   </head>
   <body>
-    <a href="Signup_selection.html"><img class="back" src="kits/back_icon.png"></a>
-    <img class="title" src="kits/signup_email_text.png">
 
-    <div id="username" class="input-group mb-3">
+    <div class="first_interaction">
+      <a href="Signup_selection.html"><img class="back" src="kits/back_icon.png"></a>
+      <img class="title" src="kits/signup_email_text.png">
+    </div>
+
+    <div class="second_interaction">
+      <div id="username" class="input-group mb-3">
       <input type="text" id="username_input" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div id="bio" class="input-group mb-3">
+      </div>
+      <div id="bio" class="input-group mb-3">
       <input type="text" id="username_input" class="form-control" placeholder="Bio" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div id="email" class="input-group mb-3">
+      </div>
+      <div id="email" class="input-group mb-3">
       <input type="text" id="username_input" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div id="pw" class="input-group mb-3">
+      </div>
+      <div id="pw" class="input-group mb-3">
       <input type="password" id="username_input" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <div id="re_pw" class="input-group mb-3">
+      </div>
+      <div id="re_pw" class="input-group mb-3">
       <input type="text" id="username_input" class="form-control" placeholder="Verifying Password" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
     </div>
     <!--회원가입 버튼 어케만드노..-->
     <!--Bio 빼고 필수사항 다 입력하게 만들면 회원가입 버튼 색이 바뀌게 하는 것도 구현하고 싶다...-->
