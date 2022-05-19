@@ -1,0 +1,35 @@
+.title {
+  position: fixed;
+  top: 60px;
+  left: 32px;
+}
+
+.record {
+  position: fixed;
+  top: 61px;
+  left: 283px;
+}
+
+.navigation {
+  position: fixed;
+  top: 57.5px;
+  left: 332px;
+}
+
+.combining {
+  position: fixed;
+  top: 687px;
+  left: 58px;
+}
+
+.makingvids {
+  position: fixed;
+  top: 687px;
+  left: 181px;
+}
+
+.deleting {
+  position: fixed;
+  top: 682px;
+  left: 281px;
+}
