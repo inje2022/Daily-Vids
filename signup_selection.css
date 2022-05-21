@@ -1,0 +1,54 @@
+body {
+  background-image: url('kits/signinup_backgroundimg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-family: 'Apple SD Gothic Neo';
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  line-height: 40px;
+}
+
+.title {
+  position: absolute;
+  top: 121px; left: 45px;
+}
+
+.titles {
+  position: absolute;
+  top: 121px;
+  left: 45px;
+}
+.signup_google {
+  position: absolute;
+  top: 464px;
+  left: 36px;
+}
+.signup_naver {
+  position: absolute;
+  top: 539px;
+  left: 36px;
+}
+.signup_kakao {
+  position: absolute;
+  top: 614px;
+  left: 36px;
+}
+.signup_email {
+  position: absolute;
+  top: 689px;
+  left: 36px;
+}
+
+.signin {
+  position: absolute;
+  color: white;
+  text-align: center;
+  bottom: 5%; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Apple SD Gothic Neo';
+  font-style: 'regular';
+}
