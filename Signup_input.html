@@ -16,10 +16,15 @@
         top: 70px;
         left: 36px;
       }
-      .title {
+      h2 {
         position: fixed;
         top: 112px;
         left: 36px;
+        font-family: 'Apple SD Gothic Neo';
+        font-weight: 600;
+        font-size: 28px;
+        color: black;
+        line-height: 40px;
       }
       #username {
         position: absolute;
@@ -96,13 +101,31 @@
       animation-fill-mode: forwards;
       animation-delay: 2s;
     }
+    .signup {
+      position: absolute;
+      width: 344px; height: 60px;
+      padding: 18.4px;
+      border: none;
+      border-radius: 14px;
+      bottom: 10%; left: 50%;
+      transform: translateX(-50%);
+      background: #8e8e8e;
+      text-align: center;
+      align-items: center;
+      outline: none;
+      color: #ffffff;
+      font-family: 'Apple SD Gothic Neo';
+      font-weight: 500;
+      font-size: 17px;
+    }
     </style>
   </head>
+
   <body>
 
     <div class="first_interaction">
       <a href="Signup_selection.html"><img class="back" src="kits/back_icon.png"></a>
-      <img class="title" src="kits/signup_email_text.png">
+      <h2>이메일로<br />시작하기</h2>
     </div>
 
     <div class="second_interaction">
@@ -123,7 +146,11 @@
       </div>
     </div>
     <div class="third_interaction">
-      <a href=""><img class="signup" src="./kits/signup_inactive.png"></a>
+      <div class="signup_button">
+        <a href="">
+        <input class="signup" type="button" value="회원가입">
+        </a>
+      </div>
     </div>
     <!--회원가입 버튼 어케만드노..-->
     <!--Bio 빼고 필수사항 다 입력하게 만들면 회원가입 버튼 색이 바뀌게 하는 것도 구현하고 싶다...-->
