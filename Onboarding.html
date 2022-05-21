@@ -19,22 +19,56 @@
         left: 46px;
       }
       .signup {
-        position: fixed;
-        top: 614px;
-        left: 36px;
+        position: absolute;
+        width: 318px; height: 60px;
+        padding: 20px;
+        border: none;
+        border-radius: 14px;
+        top: 73%; left: 50%;
+        transform: translateX(-50%);
+        background: #ffffff;
+        text-align: center;
+        align-items: center;
+        outline: none;
+        color: #000000;
+        mix-blend-mode: screen;
+        font-family: 'Apple SD Gothic Neo';
+        font-style: bold;
       }
       .signin {
-        position: fixed;
-        top: 689px;
-        left: 36px;
+        position: absolute;
+        width: 318px; height: 60px;
+        padding: 20px;
+        border-color: #ffffff;
+        border-style: solid;
+        border-width: 1.4px;
+        border-radius: 14px;
+        background-color: transparent;
+        top: 82%; left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        align-items: center;
+        color: #ffffff;
+        font-family: 'Apple SD Gothic Neo';
+        font-style: bold;
       }
     </style>
   </head>
 
   <body>
     <img class="title" src="kits/onboarding_text.png">
-    <a href="Signup_selection.html"><img class="signup" src="kits/onboarding_new.png"></a>
-    <img class="signin" src="kits/onboarding_signin.png">
+    <div class="row">
+      <div class="col-12">
+        <a href="Signup_selection.html">
+          <input class="signup" type="button" value="시작하기">
+        </a>
+      </div>
+      <div class="col-12">
+        <a href="">
+          <input class="signin" type="button" value="로그인">
+        </a>
+      </div>
+    </div>
 
   </body>
 
