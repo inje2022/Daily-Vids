@@ -1,44 +1,73 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-image: url('kits/signinup_backgroundimg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+header {
+  display: flex;
+  align-items: flex-start;
+  /* background-color: black; */
+  flex-basis: 462px;
+}
+.titlesection {
+  margin-top: 28%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12%;
+  flex-grow: 1;
+  /* background-color: yellow; */
+}
 h2 {
+  /* position: absolute; */
+  /* margin-top: 121px; margin-left: 45px; */
   font-family: 'Apple SD Gothic Neo';
   font-weight: 600;
   font-size: 28px;
   color: white;
   line-height: 40px;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.button {
+  margin: 6px;
+}
+.button:nth-child(5) {
+  margin-top: 18px;
+}
 
-.title {
+/* .title { */
   position: absolute;
   top: 121px; left: 45px;
 }
 
-.signup_google {
+/* .signup_google { */
   position: absolute;
   top: 464px;
   left: 36px;
 }
-.signup_naver {
+/* .signup_naver { */
   position: absolute;
   top: 539px;
   left: 36px;
 }
-.signup_kakao {
+/* .signup_kakao { */
   position: absolute;
   top: 614px;
   left: 36px;
 }
-.signup_email {
+/* .signup_email { */
   position: absolute;
   top: 689px;
   left: 36px;
 }
 
-.signin {
+/* .signin { */
   position: absolute;
   color: white;
   text-align: center;
