@@ -10,9 +10,11 @@
     <style>
       body {
         background-color: white;
+        display: flex;
+        flex-direction: column;
       }
       .back {
-        position: fixed
+        position: fixed;
         top: 70px;
         left: 36px;
       }
@@ -69,10 +71,7 @@
         box-shadow: 0 0 0 0.2rem rgba(255, 170, 122, 0.25);
         padding: 18px;
       }
-      .signup {
-        position: fixed;
-        top: 731px; left: 23px;
-      }
+
       @keyframes fadein {
         0% {
             opacity: 0;
@@ -89,6 +88,9 @@
       animation: fadein ease 1s;
       animation-iteration-count: 1s;
       animation-fill-mode: forwards;
+      flex-grow: 1;
+      /* background-color: yellow; */
+      flex-basis: 260px;
     }
     .second_interaction {
       opacity: 0;
@@ -96,6 +98,16 @@
       animation-iteration-count: 1s;
       animation-fill-mode: forwards;
       animation-delay: 0.8s;
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+    }
+    .input {
+      padding-left: 5%; padding-right: 5%;
+      padding-bottom: 10px;
+    }
+    .input:nth-child(3) {
+      padding-top: 50px;
     }
     .third_interaction {
       opacity: 0;
@@ -103,19 +115,20 @@
       animation-iteration-count: 1s;
       animation-fill-mode: forwards;
       animation-delay: 2s;
+      display: flex;
+      flex-direction: column;
+      /* background-color: red; */
+      margin-top: 17%;
+      margin-left: 4%; margin-right: 4%;
     }
 
     .signup {
-      position: absolute;
-      width: 344px; height: 60px;
+      width: 100%; height: 60px;
       padding: 18.4px;
       border: none;
       border-radius: 14px;
-      bottom: 10%; left: 50%;
-      transform: translateX(-50%);
       background: #8e8e8e;
       text-align: center;
-      align-items: center;
       outline: none;
       color: #ffffff;
       font-family: 'Apple SD Gothic Neo';
@@ -129,7 +142,7 @@
 
     <div class="first_interaction">
 
-          <a href="Signu p_selection.html">
+          <a href="Signup_selection.html">
             <img class="back" src="kits/back_icon.png">
           </a>
           <h2>이메일로<br />시작하기</h2>
@@ -138,35 +151,33 @@
 
     <div class="second_interaction">
 
-      <div class="inputsection">
+
         <div class="input">
-            <input type="text" id="username_input" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" id="username_input" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required />
         </div>
         <div class="input">
             <input type="text" id="username_input" class="form-control" placeholder="Bio" aria-label="Username" aria-describedby="basic-addon1">
         </div>
         <div class="input">
-            <input type="text" id="username_input" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" id="username_input" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required />
           </div>
         <div class="input">
-            <input type="password" id="username_input" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="password" id="username_input" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" required />
         </div>
         <div class="input">
-          <input type="text" id="username_input" class="form-control" placeholder="Verifying Password" aria-label="Username" aria-describedby="basic-addon1">
+          <input type="text" id="username_input" class="form-control" placeholder="Verifying Password" aria-label="Username" aria-describedby="basic-addon1" required />
         </div>
-      </div>
+
 
     </div>
 
     <div class="third_interaction">
 
-      <div class="footer">
         <div class="signup_button">
           <a href="">
-            <input class="signup" type="button" value="회원가입">
+            <input class="signup" type="submit" value="회원가입">
           </a>
         </div>
-      </div>
 
     </div>
     <!--회원가입 버튼 어케만드노..-->
