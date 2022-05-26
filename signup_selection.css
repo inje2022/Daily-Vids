@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 body {
   display: flex;
   flex-direction: column;
@@ -22,7 +24,7 @@ header {
 h2 {
   /* position: absolute; */
   /* margin-top: 121px; margin-left: 45px; */
-  font-family: 'Apple SD Gothic Neo';
+  font-family: 'pretendard';
   font-weight: 600;
   font-size: 28px;
   color: white;
