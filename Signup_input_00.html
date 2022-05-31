@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>이메일로 가입하기</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+      body, html {
+        background-color: white;
+        margin: 0; padding: 0;
+        font-family: 'pretendard';
+      }
+      .contents {
+        margin: 0 auto;
+        /* background: green; */
+        padding: 70px 5px;
+        max-width: 700px;
+
+      }
+      /* .back {
+        position: fixed;
+        top: 70px;
+        left: 36px;
+      } */
+      h2 {
+        font-weight: 600;
+        font-size: 28px;
+        color: black;
+        line-height: 37px;
+      }
+
+      #input {
+        padding: 18px;
+        }
+
+      .form-control:focus {
+        border-color: #FFAA7A;
+        border-width: 1.5px;
+        box-shadow: 0 0 0 0.2rem rgba(255, 170, 122, 0.25);
+        padding: 18px;
+      }
+
+      @keyframes fadein {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    /*인터랙션*/
+    .first_interaction {
+      animation: fadein ease 1s;
+      animation-iteration-count: 1s;
+      animation-fill-mode: forwards;
+      /* flex-grow: 1; */
+      /* background-color: yellow; */
+      margin-bottom: 70px;
+      padding-left: 25px;
+    }
+    .second_interaction {
+      opacity: 0;
+      animation: fadein ease 1s;
+      animation-iteration-count: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 0.8s;
+      /* display: block; */
+      /* margin: 0 30px; */
+      /* max-width: 1000px; */
+      text-align: center;
+      /* background: powderblue; */
+      margin-bottom: 66px;
+    }
+    .input {
+      padding-left: 5%; padding-right: 5%;
+      padding-bottom: 10px;
+    }
+    .input:nth-child(3) {
+      padding-top: 50px;
+    }
+    .third_interaction {
+      opacity: 0;
+      animation: fadein ease 1s;
+      animation-iteration-count: 1s;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+      margin: 0 15px;
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* background-color: red; */
+      /* margin-top: 17%; */
+      /* margin-left: 4%; margin-right: 4%; */
+    }
+
+    .signup {
+      width: 100%; height: 60px;
+      padding: 18.4px;
+      border: none;
+      border-radius: 14px;
+      background: #8e8e8e;
+      text-align: center;
+      outline: none;
+      color: #ffffff;
+      font-family: 'pretendard';
+      font-weight: 500;
+      font-size: 17px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="contents">
+        <div class="first_interaction">
+
+              <a href="Signup_selection.html">
+                <img class="back" src="kits/back_icon.png" style="margin-bottom: 15px">
+              </a>
+              <h2>이메일로<br />시작하기</h2>
+
+        </div>
+
+        <div class="second_interaction">
+
+
+            <div class="input">
+                <input type="text" id="input" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required />
+            </div>
+            <div class="input">
+                <input type="text" id="input" class="form-control" placeholder="Bio" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input">
+                <input type="text" id="input" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1" required />
+              </div>
+            <div class="input">
+                <input type="password" id="input" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" required />
+            </div>
+            <div class="input">
+              <input type="text" id="input" class="form-control" placeholder="Verifying Password" aria-label="Username" aria-describedby="basic-addon1" required />
+            </div>
+
+
+        </div>
+
+        <div class="third_interaction">
+
+            <div class="signup_button">
+              <a href="signup_complete.html">
+                <input class="signup" type="submit" value="회원가입">
+              </a>
+            </div>
+
+        </div>
+        <!--회원가입 버튼 어케만드노..-->
+        <!--Bio 빼고 필수사항 다 입력하게 만들면 회원가입 버튼 색이 바뀌게 하는 것도 구현하고 싶다...-->
+    </div>
+  </body>
+</html>
