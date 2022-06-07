@@ -5,6 +5,16 @@ body {
   flex-direction: column;
 }
 
+#camview, #camsensor {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(-1);
+  z-index: -10;
+  background: powderblue;
+}
+
 footer {
   margin-top: auto;
   margin-bottom: 70px;
@@ -51,7 +61,7 @@ footer {
   text-align: center;
 }
 
-#camera--trigger{
+#cambutton {
   width: 82px;
   height: 82px;
   background-color: #ffaa7a;
