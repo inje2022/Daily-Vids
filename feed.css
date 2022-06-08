@@ -1,12 +1,23 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 body, html {
-  background-image: url('./kits/feedimg.png');
+  /* background-image: url('./kits/feedimg.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0; padding: 0;
+  background-size: cover; */
+  margin: 0 auto; padding: 0;
   font-family: 'pretendard';
+  background: #000;
 }
+
+section {
+  position: relative;
+}
+
+.fucnctions {
+  position: absolute;
+}
+
+
 
 .topfunctions {
   /* display: flex;
@@ -49,4 +60,16 @@ h6 {
   color: white;
   /* font-family: "pretendard"; */
   font-size: 12px;
+}
+
+#carouselExampleFade {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+#hover:hover {
+  cursor: pointer;
+  background: #000;
+  box-shadow: 20px 20px 20px 20px #000;
+  opacity: 0.5;
 }

@@ -1,0 +1,49 @@
+body, html {
+  margin: 0; padding: 0;
+  /* background: powderblue; */
+}
+
+.top-fixed, .bot-fixed, #camera--trigger {
+  position: fixed;
+}
+
+#topleft {
+  padding: 5px;
+}
+
+.myrecord {
+  width: 48px; height: 48px;
+  background-color: #c4c4c4;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#camera--trigger {
+  left: 50%; top: 81%;
+  transform: translateX(-50%);
+  width: 82px;
+  height: 82px;
+  background-color: #ffaa7a;
+  /* background: radial-gradient(50% 50% at 50% 50%, #FFAA7A 0%, rgba(255, 194, 163, 0.8) 67.71%, rgba(255, 224, 214, 0) 99.99%, #E88D71 100%, #EFBC9F 100%); */
+  border: none;
+  border-radius: 100px;
+
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0, 0.2);
+}
+
+#camera, #camera--view, #camera--sensor {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+#camera--view, #camera--sensor {
+    transform: scaleX(-1);
+    filter: FlipH;
+               }
