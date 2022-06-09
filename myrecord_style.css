@@ -28,7 +28,16 @@ body {
 }
 
 #slider {
-  margin: 50px 10%;
+  margin: 50px 0;
+  padding: 40px 0;
+}
+
+.uk-cover-container {
+  margin: -1%;
+}
+h4 {
+  font-family: 'Pretendard';
+  font-weight: 800;
 }
 
 
