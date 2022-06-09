@@ -27,6 +27,11 @@ body {
   padding-top: 7px;
 }
 
+#slider {
+  margin: 50px 10%;
+}
+
+
 footer {
   margin-top: auto;
   margin-bottom: 100px;
